@@ -42,6 +42,7 @@ p{
 }
 
 .description-text {
+    justify-content: center;
     vertical-align: middle;
     text-align: center;
     color: white;
@@ -69,4 +70,40 @@ p{
     height: 162px;
 }
 
+@media screen and (min-width: 320px){
+    .description-text {
+        margin-top: -60px;
+        margin-left: -108px;
+    }
 
+}
+
+@media screen and (min-width: 411px){
+    #intro .container-fluid {
+        padding-left: 62px;
+        padding-top: 73px;
+    }
+
+    .description-text p {
+        padding: 0;
+    }
+
+    .description-text h1 {
+        margin-left: -11px;
+    }
+}
+
+@media screen and (min-width: 414px){
+    #intro .container-fluid {
+        padding-left: 69px;
+        padding-top: 61px;
+    }
+
+    .description-text p {
+        padding: 0;
+    }
+
+    .description-text h1 {
+        margin-left: -7px;
+    }
+}
