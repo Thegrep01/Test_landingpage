@@ -5,4 +5,11 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
     });
+    $('.crsl').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
 });
