@@ -5,4 +5,5 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
     });
+    $('.crsl').slick();
 });
