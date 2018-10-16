@@ -6,10 +6,12 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 1000);
     });
     $('.crsl').slick({
-        dots: true,
+        dots: false,
+        arrows: false,
         infinite: true,
         speed: 300,
         slidesToShow: 1,
-        adaptiveHeight: true
+        autoplay: true,
+        autoplaySpeed: 1500
     });
 });
