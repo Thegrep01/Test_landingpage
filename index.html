@@ -43,12 +43,29 @@
     </header>
 	
     <div id="intro">
-    	<div class="container">
+    	<div class="container-fluid">
             <div class="description-text text-center">
                 <h1>Lorem ipsum.</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, vel.</p>
-                <button type="button" class="btn btn-outline-light">Read more</button>
+                <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#ModalCenter">Read more</button>
         	</div>
+
+            <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenter" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ModalTitle" style="color: black">Lorem ipsum.</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, soluta!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
     	</div>
     </div>
 
@@ -84,8 +101,7 @@
     <div id="cr">
         <div class="crsl">
             <div class="carouses__item"><img class="myImage" src="img/architecture-bag-bridge-1482782.jpg" alt=""></div>
-            <div class="carouses__item"><img class="myImage" src="img/architecture-bag-bridge-1482782.jpg" alt=""></div>
-            <div class="carouses__item"><img class="myImage" src="img/architecture-bag-bridge-1482782.jpg" alt=""></div>
+            <div class="carouses__item"><img class="myImage" src="img/dawn-eerie-environment-1469879.jpg" alt=""></div>
         </div>
     </div>
 

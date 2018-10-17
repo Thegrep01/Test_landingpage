@@ -5,6 +5,20 @@ html, body {
     height: 100%;
 }
 
+body {
+    padding-right:0px !important;
+    overflow-y: visible !important;
+
+}
+
+.btn{
+    outline: none;
+}
+
+.modal-header .close {
+    outline: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: white;
     font-family: 'Source Code Pro', Roboto;
@@ -115,9 +129,6 @@ img.myImage {
 }
 
 
-.slick-dots li button:before {
-    color: tomato;
-}
 
 @media screen and (max-width: 500px) {
     
