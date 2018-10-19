@@ -20,6 +20,7 @@ $(document).ready(function () {
         }, 1000);
     });
 
+    const IP = 'http://localhost:5000/mail';
     const Form = document.querySelector('form');
 
     Form.addEventListener('submit', (event) => {
@@ -29,13 +30,22 @@ $(document).ready(function () {
         const name = Data.get('Name');
         const text = Data.get('Text-area');
 
-        if (name.trim() && text.trim()) {
-            const msg = {
-                name,
-                text
-            };
-        }
+        const msg = {
+            name,
+            text
+        };
 
-    })
+        document.getElementById("Name").value = "";
+        document.getElementById("Text-area").value = "";
+
+        fetch(IP, {
+            method: 'POST',
+            body: JSON.stringify(msg),
+            headers: {
+                'content-type': 'application/json'
+            }
+        });
+
+    });
 
 });
